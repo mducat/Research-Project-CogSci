@@ -67,7 +67,7 @@ spike_threshold_percentile = 85
 
 interpolation_frequency = 2  # Hz (inter-beats interval)
 
-subject_name = 'sandra'
+subject_name = 'mathias-ecg'
 current_trial = 'test'
 
 

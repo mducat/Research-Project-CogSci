@@ -189,6 +189,11 @@ def plot(ppg_signals, xf, mag, N, info=None, static=True, filename=None, coheren
 def analyse(filename):
     x = np.load(filename, allow_pickle=True).item()
 
+    if "/" in filename:
+        filename = filename.split("/")[-1]
+    if "\\" in filename:
+        filename = filename.split("\\")[-1]
+
     raw = x["data"]
     # ibi = x["ibi"]
 

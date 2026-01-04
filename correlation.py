@@ -157,6 +157,7 @@ ax2 = fig.add_subplot(gs[0, 1])
 
 colors = {
     "mathias": "blue",
+    "mathias-2": "green",
     "khalil": "#E91E63"
 }
 
