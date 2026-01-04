@@ -90,7 +90,6 @@ def plot(ppg_signals, xf, mag, N, info=None, static=True, filename=None, coheren
             xf[1:N//2],
             2.0/N * mag[1:N//2],
             color="red",
-            linestyle="dashdot",
             label="Power Spectral Density (PSD)",
         )
         ax3.set_title(f"Coherency score: {coherence_score:.2f}, LF Peak frequency {lf_peak_freq:.2f} Hz")
