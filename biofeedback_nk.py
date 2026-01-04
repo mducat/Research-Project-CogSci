@@ -463,11 +463,11 @@ class MainWindow(QMainWindow):
 
     def save_data(self):
         version = 0
-        file_name = f'recording_{subject_name}_{current_trial}_{version}.npy'
+        file_name = f'data/recording_{subject_name}_{current_trial}_{version}.npy'
 
         while os.path.exists(file_name):
             version += 1
-            file_name = f'recording_{subject_name}_{current_trial}_{version}.npy'
+            file_name = f'data/recording_{subject_name}_{current_trial}_{version}.npy'
 
         obj = {
             "data": self.data,

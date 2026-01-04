@@ -274,5 +274,5 @@ def analyse(filename):
     plt.savefig(f"graphs/{filename.split('.')[0]}.png", dpi=100)
 
 
-for file in glob("recording*"):
+for file in glob("data/recording*"):
     analyse(file)

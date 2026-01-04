@@ -97,7 +97,7 @@ def analyse(filename):
 
 
 
-for file in glob("recording*"):
+for file in glob("data/recording*"):
     analyse(file)
 
 from pprint import pprint
