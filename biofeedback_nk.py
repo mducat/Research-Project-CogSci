@@ -50,6 +50,7 @@ sys.path.append(f"PLUX-API-Python3/{osDic[platform.system()]}")
 
 # CONSTANTS
 
+device_address = "BTH98:D3:41:FE:16:37"
 
 recording_frequency = 100  # Hz
 recording_duration = 128 + 10  # 60s margin for errors
@@ -446,11 +447,10 @@ class MainWindow(QMainWindow):
     def start_acquisition(self):
         self.recording = True
 
-        address = "BTH98:D3:41:FE:16:37"
         active_ports = [1]
 
         try:
-            self.device = NewDevice(address)
+            self.device = NewDevice(device_address)
             self.device.duration = int(recording_duration)
             self.device.frequency = int(recording_frequency)
 
